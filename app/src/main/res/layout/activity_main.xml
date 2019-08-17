@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Chronometer
+        android:gravity="center"
+        android:id="@+id/cmtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        />
+
+    <LinearLayout
+        android:id="@+id/timebtn"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:layout_below="@id/cmtime"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="@string/start"
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="@string/stop"
+            android:id="@+id/btn_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="@string/reset"
+            android:id="@+id/btn_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:layout_margin="10dp"
+        android:layout_below="@+id/timebtn"
+        android:text="@string/event"
+        android:id="@+id/event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <VideoView
+        android:background="@color/colorPrimary"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/event"
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <Button
+        android:layout_margin="5dp"
+        android:layout_below="@+id/videoview"
+        android:text="@string/capture"
+        android:id="@+id/capt_vd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/capt_vd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/name_tv"
+            android:text="-----"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20dp"
+            android:id="@+id/ph_tv"
+            android:text="-----"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/contact"
+            android:text="@string/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/sr_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/test"
+            android:inputType="textPersonName"
+          />
+
+        <Button
+            android:text="@string/search"
+            android:id="@+id/search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assigment3</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
+    <string name="event">Add Event</string>
+    <string name="capture">Capture Video</string>
+    <string name="contact">Select Contact</string>
+    <string name="test">Text Anything</string>
+    <string name="search">Search</string>
+</resources>
